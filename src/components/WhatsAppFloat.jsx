@@ -10,7 +10,7 @@ export default function WhatsAppFloat() {
   animate={{ scale: 1 }}
   transition={{ delay: 1.5, type: 'spring' }}
   onClick={() => openWhatsApp()}
-  className="fixed bottom-6 right-6 z-50 h-14 px-4 bg-[#25D366] rounded-full flex flex-row items-center justify-center gap-2 shadow-lg hover:scale-110 transition-transform"
+  className="fixed bottom-6 left-6 z-50 h-14 px-4 bg-[#25D366] rounded-full flex flex-row items-center justify-center gap-2 shadow-lg hover:scale-110 transition-transform"
   aria-label="WhatsApp"
 >
   <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30" />

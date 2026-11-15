@@ -23,9 +23,9 @@ export default function Boutique() {
 
   const filtered = useMemo(() => {
     let list = [...products]
-    if (cat === 'HOMMES') list = list.filter((p) => p.category === 'men')
-    if (cat === 'FEMMES') list = list.filter((p) => p.category === 'women')
-    if (cat === 'NOUVEAU') list = list.filter((p) => p.label === 'New')
+    if (cat === 'men') list = list.filter((p) => p.category === 'men')
+    if (cat === 'women') list = list.filter((p) => p.category === 'women')
+    if (cat === 'new') list = list.filter((p) => p.label === 'New')
     if (search.trim()) {
       const q = search.toLowerCase()
       list = list.filter((p) => p.name.toLowerCase().includes(q) || p.type.toLowerCase().includes(q))
